@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Form3 from "./Components/Form3";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import TextField from '@mui/material/TextField';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+<div className="container mt-3">
+<div className="row">
+  <div className="col-md-5">
+  <Form3 />
+ 
+</div>
+</div>
+</div>
   );
 }
 
