@@ -2,27 +2,27 @@ import React from 'react'
 import { useField ,ErrorMessage } from 'formik'
 import TextField from '@mui/material/TextField';
 
+
 const TextFieldComp = ({label, ...props}) => {
    const [field,meta] = useField(props);
+
 let errVal = meta.touched && meta.error && 'is-invalid' ? true : false
+return (
+   <>
    
-    return (
-      <>
          <div className='mb-2'>
          <TextField
           error={errVal}
-          id="outlined-password-input"
           label={label}
           {...field}
           {...props}
-          
         />
            <div style={{"color" : "tomato"}}>
          <ErrorMessage   name={field.name} />
    </div>
-        </div> 
 
         
+        </div> 
 </>
     )
 }
